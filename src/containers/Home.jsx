@@ -10,8 +10,16 @@ import shop from "../assets/shop.png"
 import prize from "../assets/prize.png"
 import dress from "../assets/dress.png"
 import Funding from '../components/Funding';
-import facebook from "../assets/facebook.png"
 import Investors from '../components/Investors';
+import facebook from "../assets/facebook.png"
+import yCombinator from "../assets/y-combinator.png"
+import softBank from "../assets/soft-bank.png"
+import elevation from "../assets/elevation.png"
+import prosus from "../assets/prosus.png"
+import sequoia from "../assets/sequoia.png"
+import bCapital from "../assets/b-capital.png"
+import fidelity from "../assets/fidelity-investments.png"
+import ClickSlider from '../components/ClickSlider';
 
 const fundingData = [
   {
@@ -52,14 +60,10 @@ const fundingData = [
 
 ]
 
-const FundSlider = fundingData.map((data)=>{
-  return(
-    <Funding series={data.series} date={data.date} amount={data.amount}/>
-  )
-})
+const investors = [[facebook, "90"], [yCombinator, "100"], [softBank, "26"], [elevation, "35"], [prosus, "180"], [sequoia, "24"], [bCapital, "20"], [fidelity, "38"]];
+const slides = [gift, meditate, springPhone];
 
 const Home = () => {
-  console.log(FundSlider)
   return (
     <div className='home-container centre'>
       <h1>Building for a billion Indians</h1>
@@ -89,9 +93,9 @@ const Home = () => {
       <div className='slider-container'>
         <div className='slider'>
           {
-            fundingData.map((data)=>{
+            fundingData.map((data, i)=>{
               return(
-                <Funding series={data.series} date={data.date} amount={data.amount} />
+                <Funding key={i} series={data.series} date={data.date} amount={data.amount} />
               )
             })
           }
@@ -99,12 +103,16 @@ const Home = () => {
       </div>
       <div className='slider-container'>
         <div className='slider'>
-          <Investors investorLogo={facebook}/>
-          <Investors investorLogo={facebook}/>
-          <Investors investorLogo={facebook}/>
-          <Investors investorLogo={facebook}/>
+          {
+            investors.map((item, i)=>{
+              return(
+                <Investors key={i} investorLogo={item[0]} logoSize={item[1]} />
+              )
+            })
+          }
         </div>
       </div>
+      <ClickSlider slides={slides}/>
     </div>
   )
 }

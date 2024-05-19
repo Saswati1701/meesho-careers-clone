@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Investors = ({investorLogo}) => {
+const Investors = ({investorLogo, logoSize}) => {
   return (
     <div className='investor-logo-container'>
-        <img src={investorLogo} height="80px"></img>
+        <img src={investorLogo} height={`${logoSize}px`}></img>
     </div>
   )
 }
