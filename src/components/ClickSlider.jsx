@@ -11,33 +11,48 @@ const ClickSlider = ({slides}) => {
     setSlide(slide===0?slides.length-1:slide-1);
   }
   return (
+    <>
     <div className='clickSlider'>
-        <BsArrowLeftCircleFill className='arrow arrow-left' onClick={prevSlide}/>
         {
-            slides.map((item, i)=>{
-                return( 
-                <div key={i}  className={slide===i?"slide":"slide slide-hidden"}>
-                    <img src={item} alt="" height="150px"/>
-                </div>
-                )
-            })
+          slides.map((item, i)=>{
+            return(
+              <div key={i} className={slide===i?"slide":"slide slide-hidden"}>
+                {
+                  item.map((card, j)=>{
+                    return(
+                      <div key={j} className='card'>
+                        <p>{card.date}</p>
+                        <img src={card.image}></img>
+                        <p>{card.description}</p>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            )
+          })
         }
-        <BsArrowRightCircleFill className='arrow arrow-right' onClick={nextSlide}/>
+        
+    </div>
+    <div className='controls'>
+        <BsArrowLeftCircleFill className='arrow arrow-left' onClick={prevSlide}/>
         <span className='indicators'>
             {
-                slides.map((_, i)=>{
-                    return( 
-                    <button 
-                        className={slide===i?"indicator":"indicator indicator-inactive"} 
-                        key={i} 
-                        onClick={()=>{setSlide(i)}}>
+              slides.map((_, i)=>{
+                return( 
+                  <button 
+                  className={slide===i?"indicator":"indicator indicator-inactive"} 
+                  key={i} 
+                  onClick={()=>{setSlide(i)}}>
                     </button>
                     )
-                })
-
-            }
+                  })
+                  
+                }
         </span>
-    </div>
+        <BsArrowRightCircleFill className='arrow arrow-right' onClick={nextSlide}/>
+      </div>
+    </>
   )
 }
 

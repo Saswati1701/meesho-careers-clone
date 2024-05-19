@@ -20,7 +20,11 @@ import sequoia from "../assets/sequoia.png"
 import bCapital from "../assets/b-capital.png"
 import fidelity from "../assets/fidelity-investments.png"
 import ClickSlider from '../components/ClickSlider';
-
+import cloth from "../assets/cloth.png"
+import handnphone from "../assets/handnphone.png"
+import hands from "../assets/hands.png"
+import facebook2 from "../assets/facebook2.png"
+import naspers from "../assets/naspers.png"
 const fundingData = [
   {
     series: "F",
@@ -61,7 +65,61 @@ const fundingData = [
 ]
 
 const investors = [[facebook, "90"], [yCombinator, "100"], [softBank, "26"], [elevation, "35"], [prosus, "180"], [sequoia, "24"], [bCapital, "20"], [fidelity, "38"]];
-const slides = [gift, meditate, springPhone];
+const slides = [
+  [
+    {
+      date:"August 2015",
+      image:cloth,
+      description: "We began with Fashnear - A hyperlocal fashion discovery platform"
+    },
+    {
+      date:"March 2016",
+      image:handnphone,
+      description: "Pivoted to a mobile-first platform to help shopowners sell on Whatsapp & Facebook"
+    },
+    {
+      date:"June 2016",
+      image:yCombinator,
+      description: "Meesho is born, our founders get selected to Y Combinator"
+    }
+  ],
+  [
+    {
+      date:"Feb 2019",
+      image:hands,
+      description: "We hit 1.2 million monthly orders and ~200k transacting users",
+    }, 
+    {
+      date:"June 2019",
+      image:facebook2,
+      description: "Facebook invests us - first investment in an Indian startup",
+    },
+    {
+      date: "Feb 2020",
+      image: naspers,
+      description: "Our 1st ESOP buyback worth $1 million"
+    }
+  ],
+  [
+    {
+      date:"Feb 2019",
+      image:hands,
+      description: "We hit 1.2 million monthly orders and ~200k transacting users",
+    },
+    {
+      date:"June 2019",
+      image:facebook2,
+      description: "Facebook invests us - first investment in an Indian startup",
+    },
+    {
+      date: "Feb 2020",
+      image: naspers,
+      description: "Our 1st ESOP buyback worth $1 million"
+    }
+
+  ]
+
+]
 
 const Home = () => {
   return (
@@ -113,6 +171,12 @@ const Home = () => {
         </div>
       </div>
       <ClickSlider slides={slides}/>
+      <div className='buildForBharat'>
+        <img></img>
+        <div></div>
+        <img></img>
+      </div>
+      
     </div>
   )
 }
