@@ -25,6 +25,7 @@ import handnphone from "../assets/handnphone.png"
 import hands from "../assets/hands.png"
 import facebook2 from "../assets/facebook2.png"
 import naspers from "../assets/naspers.png"
+import coins from "../assets/coins.png"
 const fundingData = [
   {
     series: "F",
@@ -172,9 +173,13 @@ const Home = () => {
       </div>
       <ClickSlider slides={slides}/>
       <div className='buildForBharat'>
-        <img></img>
-        <div></div>
-        <img></img>
+        <img src={coins} alt='coins' height="200px"></img>
+        <div>
+          <p>Innovating</p>
+          <p>e-commerce</p>
+          <button>BUILD FOR BHARAT</button>
+        </div>
+        <img src={home} height="214px"></img>
       </div>
       
     </div>
