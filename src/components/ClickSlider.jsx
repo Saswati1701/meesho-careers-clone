@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 const ClickSlider = ({slides}) => {
-  console.log(slides);
   const [slide, setSlide] = useState(0);
   const nextSlide = () =>{
     setSlide(slide===slides.length-1?0:slide+1);

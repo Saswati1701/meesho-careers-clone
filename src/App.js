@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './containers/Home';
-import Tech from './containers/Tech';
+import Tech from './containers/tech/Tech';
 import Life from './containers/Life';
 import Blog from './containers/Blog';
 import Newsroom from './containers/Newsroom';

@@ -1,0 +1,17 @@
+.tech-container{
+    width: 100%;
+}
+.video-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.video-container :nth-child(1){
+    border: 1px solid yellowgreen;
+    width: 40%;
+    color: #FF9D00;
+}
+
+.video-container :nth-child(2){
+    width: 60%;
+}
