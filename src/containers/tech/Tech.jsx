@@ -5,16 +5,18 @@ import "./tech.css"
 const Tech = () => {
   return (
     <div className='tech-container'>
-      <div className='video-container'>
-        <div>
-          <p>Engineering</p>
-          <p>for Bharat</p>
+      <div className='tech-section-one'>
+        <div className='text-container'>
+          <div>
+            <p>Product</p>
+            <p>For Bharat</p>
+          </div>
         </div>
-          <video src={video} height="530px" muted autoPlay loop></video>
-      </div>
+        <div className='video-container'>
+          <video src={video} muted autoPlay loop></video>
+        </div>
+        
 
-      <div>
-        <h2>OUR SCALE</h2>
       </div>
     </div>
   )

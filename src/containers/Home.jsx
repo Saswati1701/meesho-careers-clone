@@ -9,8 +9,8 @@ import connected from "../assets/connected.png"
 import shop from "../assets/shop.png"
 import prize from "../assets/prize.png"
 import dress from "../assets/dress.png"
-import Funding from '../components/Funding';
-import Investors from '../components/Investors';
+import Funding from '../components/home/Funding';
+import Investors from '../components/home/Investors';
 import facebook from "../assets/facebook.png"
 import yCombinator from "../assets/y-combinator.png"
 import softBank from "../assets/soft-bank.png"
@@ -19,7 +19,7 @@ import prosus from "../assets/prosus.png"
 import sequoia from "../assets/sequoia.png"
 import bCapital from "../assets/b-capital.png"
 import fidelity from "../assets/fidelity-investments.png"
-import ClickSlider from '../components/ClickSlider';
+import ClickSlider from '../components/home/ClickSlider';
 import cloth from "../assets/cloth.png"
 import handnphone from "../assets/handnphone.png"
 import hands from "../assets/hands.png"
