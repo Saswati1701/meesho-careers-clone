@@ -8,6 +8,7 @@ import gateway from "../../assets/gateway.png"
 import clock from "../../assets/clock.png"
 import bEvents from "../../assets/b-vents.png"
 import chats from "../../assets/chats.png"
+import wavyDisplacement from "../../assets/wavy-displacement.mp4"
 
 
 const techSlideData = [
@@ -54,11 +55,18 @@ const Tech = () => {
         <div className='video-container'>
           <video src={video} muted autoPlay loop></video>
         </div>
-        
       </div>
-        <div className='tech-section-two'>
-          <TechSlider allSlides={techSlideData}/>
-        </div>
+
+      <div className='tech-section-two'>
+        <h2>OUR SCALE</h2>
+        <TechSlider allSlides={techSlideData}/>
+      </div>
+
+      <div className="tech-section-three">
+        <h1><span className='blue'>Product</span> <span className='violet'>Design</span></h1>
+        <h1><span className='pink'>Engineering</span> <span className='yellow'>Data Science</span> </h1>
+        <video src={wavyDisplacement} muted autoPlay loop height="600px"></video>
+      </div>
     </div>
   )
 }

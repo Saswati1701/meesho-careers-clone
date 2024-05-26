@@ -14,7 +14,7 @@ const Card = ({image, text}) => {
 
 const TechSlide = ({slide}) => {
     return(
-        <div className='tech-slide'>
+        <>
             {
                 slide.map((item, i)=>{
                     return(
@@ -24,7 +24,7 @@ const TechSlide = ({slide}) => {
                     )
                 })
             }       
-        </div>
+        </>
     )
 }
 
