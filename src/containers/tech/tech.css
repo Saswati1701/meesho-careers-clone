@@ -37,3 +37,77 @@
 .video-container video{
     height: 32.5rem;
 }
+
+.tech-section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-slider-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -3rem;
+    
+}
+
+.tech-slider-card{
+    border-radius: 2rem;
+    width: 17rem;
+    background: #36447A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    height: 24rem;
+}
+
+.tech-slider-card img{
+    height: 10rem;
+}
+
+.tech-slider-card p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.tech-slide{
+    width: 81rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tech-slide-card-i, .tech-slide-card-ii, .tech-slide-card-iii{
+    height: 54rem;
+}
+
+.tech-slide-card-i, .tech-slide-card-iii{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tech-section-two svg{
+    margin: 0 2.5rem;
+}
+
+.slide-hidden{
+    display: none;
+  }
+
+  .arrow-left{
+    left: 3.5rem;
+  }
+  
+  .arrow-right{
+    right: 1.5rem;
+  }
+  
+  .arrow :hover{
+    cursor: pointer;
+  }
+  

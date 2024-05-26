@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './containers/Home';
+import Home from './containers/home/Home';
 import Tech from './containers/tech/Tech';
 import Life from './containers/Life';
 import Blog from './containers/Blog';
